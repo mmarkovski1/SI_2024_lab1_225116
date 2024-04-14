@@ -113,4 +113,8 @@ git push origin bug1
 git add .
 git commit -m "Final Commit"
 
+29. push origin master
+push origin bug1
+push origin bug2
+/*ги врзавме со ремоте репото.*/
 
