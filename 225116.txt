@@ -1,0 +1,116 @@
+cd SI_2024_lab1_225116
+4. git init /* Иницијализираме ГИТ репозиториум на нашиот локален компјутер, за да овозможиме работа со гит командите преку Баш терминалот*/
+
+5. git remote add origin https://github.com/mmarkovski1/SI_2024_lab1_225116.git
+
+git remote -v
+
+/*Сврзуваме локалното со ремоте репо кое е поврзано на ГитХаб серверот на мојот профил, и проверуваме дали е конектирано */
+
+6.touch README.md 
+	nano README.md 
+
+git add README.md 
+git add .
+git commit -m "Initial commit"
+/*Креираме, едитираме со податоци, ексит со сејв, поставка на прв комит со гит адд, па со комит на мастер со фајлот */
+
+7. git add "*.java"
+git add .
+git commit -m "Add starter code"
+
+/*ги додаваме 3те јава фајлови со ““ рекурзивен повик, може и со обично *.java */
+
+8. git push origin master
+ /* ги синхронизираме локал со ремоте, ни излегува прозорец за авторизација*/
+под А поправаме код според даденото наместо парна должина да важи за непарна должина
+под Б поправаме од мин
+и во двата фајла е во линија 8.
+
+9. git status
+git branch bug1
+git branch bug2
+/* проверка каде е HEAD,па ги креираме само гранките а не се префрламе директно на нив*/
+
+10.git checkout bug1
+
+11. git add *.java
+git add .
+git commit -m "Fix wrong condition in filterOddLengthStrings"
+
+12. git checkout master
+git checkout bug2
+git log
+/*префрламе на мастер од баг1, па одиме на баг2*/
+
+13. git add *.java
+git add .
+git commit -a -m "Fix wrong condition in makeBigStringFrom"
+git log
+
+/*со првата команда ги додаваме јава фајловите само во таа гранка (не е рекурзивен) и додаваме комит порака па проверка на трети комит*/
+
+/*го додаваме и ставаме порака во истата команда со -а -м, и проверуваме како 3ти комит дали е тука на Буг2*/
+
+14. git chekout bug1
+
+15. git add *.java
+git add .
+git commit -m "Call method filterOddLengthStrings in main class"
+git log
+/* ја правиме промената, го додаваме фајлот и додаваме комит порака,проверка на 4ти комит*/
+
+16. git checkout bug2
+
+17.
+git add *.java
+git add .
+git commit -m "Call method makeBigStringForm in main class"
+git log
+/* ја правиме промената, го додаваме фајлот и додаваме комит порака,проверка на 4ти комит*/
+
+18. git checkout master
+git push origin master
+git push origin bug1
+git push origin bug2
+/* ги прифаќаме промените кои се дадени compare и мерџ*/
+
+19.git status
+git checkout master
+/*веќе бев на мастер од претходниот чекор*/
+
+20. git merge bug1
+/*со Fast forward*/
+
+21.
+git push origin master
+git push origin bug1
+git push origin bug2
+/*ги спојуваме локалните со ремоте репото*/
+
+
+22. git checkout bug2
+/*префрлуваме на баг2 од мастер*/
+
+23. git rebase master
+git add.
+/*ние сме на баг2 и правиме рибејс со мастер*/
+
+24. git checkout master
+/*префрлуваме*/
+
+25. git merge bug2
+/*на мастер спојуваме со баг2*/
+
+26. git push origin master
+git push origin bug1
+
+27. git push origin bug2 --force
+/*чекорите ги направив едни по други со форс бидејќи ми изрекуваше грешка без форс.*/
+
+28. git log
+/*гит лог на сите податоци за комити во посебен тхт фајл*/
+git add .
+git commit -m "Final Commit"
+
+

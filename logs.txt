@@ -1,0 +1,21 @@
+commit cdc35f23464d9d2b317f9c1cde91ebf07470794b (HEAD -> master, origin/master, origin/bug2, bug2)
+Author: Mariosr1 <73496991+Mariosr1@users.noreply.github.com>
+Date:   Sun Apr 14 02:01:12 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit c7ec301136a801e4884943952d8ccd5fcfede29f (origin/bug1, bug1)
+Author: Mariosr1 <73496991+Mariosr1@users.noreply.github.com>
+Date:   Sun Apr 14 02:00:06 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit a40246f0f51236290352d9d505c78395ccfff90e
+Author: Mariosr1 <73496991+Mariosr1@users.noreply.github.com>
+Date:   Sun Apr 14 01:54:25 2024 +0200
+
+    Add starter code
+
+commit 524523ff5762de1caa518c2ce9dd61dd73da881c
+Author: Mariosr1 <73496991+Mariosr1@users.noreply.github.com>
+Date:   Sun Apr 14 01:52:46 2024 +0200
